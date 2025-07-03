@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>glar.io Mod Client — Final</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      overflow: hidden;
+      height: 100%;
+    }
+    canvas {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+    #ui {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: #fff;
+      font-family: sans-serif;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      border-radius: 8px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    #notify {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      color: white;
+      background: rgba(0,0,0,0.7);
+      padding: 5px 10px;
+      font-family: sans-serif;
+      border-radius: 5px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <div id="ui">
+    <label><input type="checkbox" id="freeCam"> Free Cam (F)</label>
+    <label><input type="checkbox" id="fastPlace"> Fast Place</label>
+    <label><input type="checkbox" id="radius"> Weapon Radius</label>
+  </div>
+  <div id="notify">Mod enabled</div>
+  <script src="main.js"></script>
+</body>
+</html>
